@@ -9,8 +9,8 @@ dotenv.config();
 const network: Cluster = 'devnet';
 
 // Image file location and name. Change to your own
-const imageFile = './image/token_image.jpeg';
-const imageFileName = 'token_image.jpeg';
+const imageFile = './image/token_image.png';
+const imageFileName = 'token_image.png';
 
 export const RPC_ENDPOINT = process.env.RPC_ENDPOINT ?? clusterApiUrl(network);
 
@@ -30,7 +30,7 @@ export const DEFAULT_TOKEN = {
   ),
   USDC: new Token(
     TOKEN_PROGRAM_ID,
-    new PublicKey('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
+    new PublicKey('CLAdX4NBgS5YCPFnTbyfX6uUUCVSx5JCTauS4mLXpgT'),
     6,
     'USDC',
     'USDC'
@@ -38,9 +38,9 @@ export const DEFAULT_TOKEN = {
 };
 
 export const token_info: tokenInfo = {
-  token_name: 'TEST_TOKEN',
-  token_symbol: 'TEST',
-  description: `TEST TOKEN.\n\nTELEGRAM:  \nTWITTER:  \n WEBSITE:  `,
+  token_name: 'CLaus Token',
+  token_symbol: 'Claus',
+  description: `CLAUS TOKEN.\n\nTELEGRAM:  \nTWITTER: \n WEBSITE:  `,
   image_info: {
     image: imageFile ?? '',
     imageFileName: imageFileName ?? '',

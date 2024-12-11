@@ -49,7 +49,7 @@ async function uploadMetaData(
 
     umi.use(nftStorageUploader({ token: process.env.NFT_STORAGE_API_KEY }));
 
-    let uploadedImageUri = '';
+    let uploadedImageUri = 'logo';
 
     /**this block will only run if both the image and imagefilename are
      * provided in the token_info
